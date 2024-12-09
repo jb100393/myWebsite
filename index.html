@@ -3,27 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newcastle United</title>
+  <title>Newcastle United FC - Official Fan Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    /* General page styles */
+    /* General page styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       background-image: linear-gradient(rgb(101, 222, 255), rgb(127, 56, 228));
       margin: 0;
       padding: 0;
       min-height: 100vh;
+      color: #fff;
     }
 
     h1 {
       font-size: 36px;
-      color: #fff;
       margin-top: 20px;
     }
 
-    /* Button Styles */
+    /* Navigation Bar */
+    nav {
+      background-color: #222;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      margin: 0 20px;
+      padding: 8px 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #7f38e4;
+      border-radius: 5px;
+    }
+
+    /* Button Styling */
     .bn632-hover {
-      width: 200px;
+      width: 220px;
       font-size: 18px;
       font-weight: 600;
       color: #fff;
@@ -50,17 +74,17 @@
       box-shadow: 0 5px 15px rgba(0, 58, 160, 0.4);
     }
 
-    /* Image Styles */
+    /* Image styling */
     img {
       max-width: 100%;
       height: auto;
       margin-top: 20px;
+      border-radius: 10px;
     }
 
     /* Paragraph and video section */
     p {
       font-size: 18px;
-      color: #fff;
       max-width: 800px;
       margin: 20px auto;
       line-height: 1.6;
@@ -72,7 +96,7 @@
     }
 
     /* Responsive Design */
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .bn632-hover {
         width: 80%;
       }
@@ -80,28 +104,46 @@
       p {
         font-size: 16px;
       }
+
+      nav a {
+        font-size: 16px;
+        margin: 0 10px;
+      }
     }
+
   </style>
 </head>
+
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+  </nav>
+
+  <!-- Main Content -->
   <h1>Newcastle United</h1>
 
+  <!-- Image Section -->
   <img src="https://wallpapers.com/images/hd/newcastle-united-fc-logo-0czb47lddbd0qvvf.jpg" alt="Newcastle United Logo" width="350px">
 
   <br>
-  <a href="/"><button class="bn632-hover bn28">All About Newcastle Upon Tyne</button></a>
-  
+  <a href="#about"><button class="bn632-hover bn28">All About Newcastle Upon Tyne</button></a>
+
   <br>
   <img src="https://media2.giphy.com/media/0m94ajQSZxWSUUD44F/giphy.webp?cid=790b76119sew44b5pwfhck8ogptmw1ypuvsasmncx9cz8ex0&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Newcastle GIF" width="300px">
-  
+
   <br>
-  <p>
+  <p id="about">
     Everything you need to know about Newcastle.
     Newcastle upon Tyne is home to the famous football club, Newcastle United, with more than 4.3 million fans around the world. Some of the most iconic landmarks in Newcastle include the Angel of the North, St James' Park, and the River Tyne. The River Tyne stretches for up to 118 km, while St James' Park has a seating capacity of 60,000 people.
   </p>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/UKMkEU8LYhQ?si=x7LUH_efoRoughzJ" title="Newcastle United Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!-- Video Section -->
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/UKMkEU8LYhQ?si=x7LUH_efoRoughzJ" title="Newcastle United Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </body>
 </html>
